@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Resume Builder</h1>
+    <form id="resumeForm">
+      <!-- Profile Details -->
+      <label for="profileImage">Profile Picture:</label>
+      <input type="file" id="profileImage" accept="image/*">
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="fathersName">Father's Name:</label>
+      <input type="text" id="fathersName" placeholder="Enter your father's name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" placeholder="Enter your address" required></textarea>
+
+      <!-- Education Section -->
+      <label for="education">Education:</label>
+      <textarea id="education" placeholder="List your education (e.g., degree, institution, year)" required></textarea>
+
+      <!-- Professional Objectives -->
+      <label for="summary">Professional Objective:</label>
+      <textarea id="summary" placeholder="Write a brief summary about yourself"></textarea>
+
+      <!-- Work Experience -->
+      <label for="experience">Work Experience (Optional):</label>
+      <textarea id="experience" placeholder="List your work experience (e.g., role, company, duration)"></textarea>
+
+      <!-- Professional Skills -->
+      <label for="skills">Professional Skills:</label>
+      <textarea id="skills" placeholder="List your professional skills (comma-separated)" required></textarea>
+
+      <!-- Hobbies -->
+      <label for="hobbies">Hobbies:</label>
+      <textarea id="hobbies" placeholder="List your hobbies"></textarea>
+
+      <!-- Languages -->
+      <label for="languages">Languages:</label>
+      <textarea id="languages" placeholder="List languages you know"></textarea>
+
+      <!-- References -->
+      <label for="references">References (Optional):</label>
+      <textarea id="references" placeholder="Provide references in a formatted manner"></textarea>
+
+      <button type="button" id="generateBtn">Generate Resume</button>
+    </form>
+    
+    <div id="resumeOutput" class="hidden">
+      <h2>Generated Resume</h2>
+      <div id="resumeContent"></div>
+      <button id="downloadBtn">Download Resume</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
